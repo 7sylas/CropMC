@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<title>CropMC — A Minecraft Survival Server, Coming Soon</title>
+<meta name="description" content="CropMC is a brand-new Minecraft survival server built around farming, trading, and community. Opening soon at cropmc.net.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://cropmc.net/">
+<meta name="theme-color" content="#fe7015">
+
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="favicon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CropMC">
+<meta property="og:title" content="CropMC — Minecraft Survival, Grown From Scratch">
+<meta property="og:description" content="A brand-new Minecraft survival server built around farming, trading, and community. Opening soon.">
+<meta property="og:url" content="https://cropmc.net/">
+<meta property="og:image" content="https://cropmc.net/logo.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CropMC — Minecraft Survival, Grown From Scratch">
+<meta name="twitter:description" content="A brand-new Minecraft survival server built around farming, trading, and community. Opening soon.">
+<meta name="twitter:image" content="https://cropmc.net/logo.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --orange:#fe7015;
+    --gold:#f9b420;
+    --soil:#1f1006;
+    --cream:#fff8ef;
+  }
+
+  *{box-sizing:border-box;}
+
+ body{
+  margin:0;
+  min-height:100vh;
+  background:linear-gradient(135deg, var(--orange) 0%, var(--gold) 55%, var(--orange) 100%);
+  background-size:260% 260%;
+  animation:gradientMove 14s ease-in-out infinite;
+  font-family:'Plus Jakarta Sans', system-ui, sans-serif;
+  color:var(--soil);
+  overflow:hidden;
+  position:relative;
+}
+  @keyframes gradientMove{
+    0%,100%{background-position:0% 30%;}
+    50%{background-position:100% 70%;}
+  }
+
+  .wrap{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding-top:60px;
+  }
+
+.logo-wrap{
+  position:absolute;
+  top:40px;
+  left:50%;
+  transform:translateX(-50%);
+  width:160px;
+  height:160px;
+}
+
+
+  .logo{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    position:relative;
+  }
+
+.center{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+.sub{
+  margin-top:12px;
+  font-weight:600;
+  opacity:.8;
+  max-width:380px;
+  text-align:center;
+}
+  .status{
+    font-family:'Bungee', system-ui, sans-serif;
+    font-size:clamp(2.2rem,7vw,4rem);
+    margin:0;
+    text-shadow:0 5px 0 rgba(31,16,6,.1);
+  }
+
+  .sub{
+    margin-top:12px;
+    font-weight:600;
+    opacity:.8;
+    max-width:380px;
+  }
+
+  footer{
+    position:fixed;
+    bottom:16px;
+    width:100%;
+    text-align:center;
+    font-size:.75rem;
+    opacity:.6;
+  }
+
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none !important;}
+  }
+</style>
+</head>
+
+<body>
+
+  <div class="wrap">
+
+  <div class="logo-wrap">
+    <div class="logo-glow"></div>
+    <img src="logo.png" class="logo" alt="CropMC logo">
+  </div>
+
+  <div class="center">
+    <h1 class="status">Coming Soon</h1>
+    <p class="sub">A Minecraft survival server, grown from scratch.</p>
+  </div>
+
+  <footer>
+    © <span id="year"></span> CropMC — not affiliated with Mojang or Microsoft.
+  </footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
